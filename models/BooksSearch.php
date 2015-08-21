@@ -43,9 +43,16 @@ class BooksSearch extends Books
     {
         $query = Books::find();
 
+        $query->joinWith(['author']);
+
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
+
+        $dataProvider->sort->attributes['author'] = [
+            'asc' => ['authors.firstname' => SORT_ASC, 'authors.lastname' => SORT_ASC],
+            'desc' => ['authors.firstname' => SORT_DESC, 'authors.lastname' => SORT_DESC],
+        ];
 
         $this->load($params);
 
