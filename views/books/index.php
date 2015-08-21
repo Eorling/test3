@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\BooksSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Books';
+$this->title = 'Книги';
 $this->params['breadcrumbs'][] = $this->title;
 $this->registerJsFile('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js',['position'=>$this::POS_HEAD]);
 ?>
@@ -17,7 +17,7 @@ $this->registerJsFile('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery
     <?php  echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Books', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Добавить книгу', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
