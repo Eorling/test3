@@ -48,8 +48,8 @@ $this->registerJsFile('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery
                 }
 
             ],
-            'date',
-            'date_create',
+            'date:date',
+            'date_create:date',
 
             [   'class' => 'yii\grid\ActionColumn',
                 'template' => '{view} {update} {delete}',

@@ -23,9 +23,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'author_id',
                 'value'     => $model->author->firstname . ' ' . $model->author->lastname
             ],
-            'date',
-            'date_create',
-            'date_update',
+            'date:date',
+            'date_create:date',
+            'date_update:date',
             [
                 'attribute' => 'preview',
                 'value'     => Html::img(

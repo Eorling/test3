@@ -29,7 +29,7 @@ use yii\widgets\ActiveForm;
             function($model) {
                 return $model->firstname . ' ' . $model->lastname;
             }
-        )
+        ),['prompt' => '']
     ) ?>
 
     <div class="form-group">
